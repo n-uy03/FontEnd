@@ -1,0 +1,191 @@
+body{
+ div{
+  color: black;
+ }
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+ h1{
+  text-align: center;
+ }
+.btn{
+    margin: 2px;
+}
+
+
+
+.modal-content{
+  padding: 0px 50px;
+  height: 100%;
+}
+
+
+
+.search-container {
+  display: flex; /* Sử dụng flexbox để căn cứng các phần tử trên cùng một hàng */
+  align-items: center; /* Căn các phần tử theo chiều dọc */
+  margin-bottom: 10px; /* Khoảng cách dưới cùng */
+  
+}
+
+.search-container input {
+  flex: 1; /* Input sẽ mở rộng để lấp đầy không gian còn lại */
+  margin-right: 10px; /* Khoảng cách phải */
+}
+
+.search-container button {
+  flex-shrink: 0; /* Không cho phép nén kích thước của button */
+}
+.row{
+  margin-right: unset !important;
+    margin-left: unset !important;
+}
+.modal-title {
+  text-align: center;
+  width: 100%; // Đảm bảo tiêu đề chiếm toàn bộ chiều rộng của modal
+}
+
+.search-input {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.search-button {
+  padding: 8px 16px;
+  right: 0;
+  top: 0;
+ 
+  border: none;
+  background: #f2f2f2;
+  color: #333;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background: #ddd;
+}
+
+.ngayketthuc{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.khoangngay{
+  text-align:center ;
+}
+.chucvu{
+  text-align: center;
+}
+.error-text{
+  color: red;
+
+}
+
+.pagination {
+  display: flex;
+  justify-content: center; // Để căn giữa phân trang
+  margin-top: 20px; // Khoảng cách từ phần trên
+}
+
+.detail-content {
+  // Đảm bảo tất cả các đoạn văn được căn đều sang hai bên
+  text-align: justify;
+  
+  // Sử dụng pseudo-element để tránh căn đều không cần thiết
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%; // Giúp tránh căn đều không cần thiết cho dòng cuối
+  }
+  
+  // Cách định dạng cho các thẻ p
+  p {
+    margin-bottom: 10px;
+    padding: 0 10px; // Thêm khoảng cách ngang
+  }
+
+  // Định dạng các cột sử dụng Bootstrap
+  .col-6 {
+    padding: 0; // Để tránh khoảng cách giữa các cột
+  }
+}
+.navbar {
+  padding: 119px;
+}
+
+
+.btndiv {
+  display: flex;
+  justify-content: space-between; // căn các cột từng bên
+  align-items: center; // căn các phần tử theo chiều dọc
+
+  .btnexcel {
+      display: flex;
+      justify-content: flex-end; // căn các nút sang phải
+  }
+}
+
+    
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+
